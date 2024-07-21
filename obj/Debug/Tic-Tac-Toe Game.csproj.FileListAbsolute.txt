@@ -1,0 +1,10 @@
+D:\programmin\first jorney\Tic-Tac-Toe Game\bin\Debug\Tic-Tac-Toe Game.exe.config
+D:\programmin\first jorney\Tic-Tac-Toe Game\bin\Debug\Tic-Tac-Toe Game.exe
+D:\programmin\first jorney\Tic-Tac-Toe Game\bin\Debug\Tic-Tac-Toe Game.pdb
+D:\programmin\first jorney\Tic-Tac-Toe Game\obj\Debug\Tic-Tac-Toe Game.csproj.AssemblyReference.cache
+D:\programmin\first jorney\Tic-Tac-Toe Game\obj\Debug\Tic_Tac_Toe_Game.Form1.resources
+D:\programmin\first jorney\Tic-Tac-Toe Game\obj\Debug\Tic_Tac_Toe_Game.Properties.Resources.resources
+D:\programmin\first jorney\Tic-Tac-Toe Game\obj\Debug\Tic-Tac-Toe Game.csproj.GenerateResource.cache
+D:\programmin\first jorney\Tic-Tac-Toe Game\obj\Debug\Tic-Tac-Toe Game.csproj.CoreCompileInputs.cache
+D:\programmin\first jorney\Tic-Tac-Toe Game\obj\Debug\Tic-Tac-Toe Game.exe
+D:\programmin\first jorney\Tic-Tac-Toe Game\obj\Debug\Tic-Tac-Toe Game.pdb
