@@ -89,5 +89,8 @@
   <ItemGroup>
     <None Include="Images\X.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Tic Tac Toe icon.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

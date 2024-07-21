@@ -32,13 +32,86 @@ namespace Tic_Tac_Toe_Game
             for(int i=0;i<SmallArray.Length; i++)
             {
                 
-                    if (IsNumberInArray(SmallArray[i], BigArray))
+                    if (!IsNumberInArray(SmallArray[i], BigArray))
                     {
-                        return true;
+                        return false;
                     }
                 
             }
-            return false;
+            return true;
+        }
+
+        int[] CheckWinDiag()
+        {
+            int[] Diag = { 1, 5, 9 };
+            if(IsArrayInArray(Diag, GetPlayerArray()))
+            {
+                return Diag;
+            }
+            Diag[0] = 3;
+            Diag[2] = 7;
+            if (IsArrayInArray(Diag, GetPlayerArray()))
+            {
+                return Diag;
+            }
+
+            return default(int[]);
+        }
+
+        int[] CheckWinRow()
+        {
+            int[] Diag = { 0, 3, 6 };
+
+            for (int i = 1; i <= 3; i++)
+            {
+                Diag[0] += 1;
+                Diag[1] += 1;
+                Diag[2] += 1;
+                if (IsArrayInArray(Diag, GetPlayerArray()))
+                {
+                    return Diag;
+                }
+            }
+            return default(int[]);
+        }
+
+        int[] CheckWinColom()
+        {
+            int[] Diag = { -2, -1, 0 };
+
+            for (int i = 1; i <= 3; i++)
+            {
+                Diag[0] += 3;
+                Diag[1] += 3;
+                Diag[2] += 3;
+                if (IsArrayInArray(Diag, GetPlayerArray()))
+                {
+                    return Diag;
+                }
+            }
+            return default(int[]);
+        }
+        int []CheckWinStatus()
+        {
+            int[] Result = new int[3];
+            if ((Result=CheckWinDiag()) != default(int[]))
+            {
+                return Result;
+            }
+
+            if ((Result = CheckWinRow()) != default(int[]))
+            {
+                return Result;
+            }
+
+            if ((Result = CheckWinColom()) != default(int[]))
+            {
+                return Result;
+            }
+
+            return default(int[]);
+
+
         }
 
         
@@ -74,64 +147,92 @@ namespace Tic_Tac_Toe_Game
 
         void ChangeWInPictureBoxBackTGreen(int[] Result)
         {
-            if(IsNumberInArray( Convert.ToInt32(pictureBox1.Tag) ,Result))
+            if(IsNumberInArray( Convert.ToInt32(pb1.Tag) ,Result))
             {
-                pictureBox1.BackColor = Color.Lime;
+                pb1.BackColor = Color.Lime;
                 
             }
 
-            if (IsNumberInArray(Convert.ToInt32(pictureBox2.Tag), Result))
+            if (IsNumberInArray(Convert.ToInt32(pb2.Tag), Result))
             {
-                pictureBox1.BackColor = Color.Lime;
+                pb2.BackColor = Color.Lime;
                 
             }
 
-            if (IsNumberInArray(Convert.ToInt32(pictureBox3.Tag), Result))
+            if (IsNumberInArray(Convert.ToInt32(pb3.Tag), Result))
             {
-                pictureBox1.BackColor = Color.Lime;
+                pb3.BackColor = Color.Lime;
                
             }
 
-            if (IsNumberInArray(Convert.ToInt32(pictureBox4.Tag), Result))
+            if (IsNumberInArray(Convert.ToInt32(pb4.Tag), Result))
             {
-                pictureBox1.BackColor = Color.Lime;
+                pb4.BackColor = Color.Lime;
                 
             }
 
-            if (IsNumberInArray(Convert.ToInt32(pictureBox5.Tag), Result))
+            if (IsNumberInArray(Convert.ToInt32(pb5.Tag), Result))
             {
-                pictureBox1.BackColor = Color.Lime;
+                pb5.BackColor = Color.Lime;
                 
             }
 
-            if (IsNumberInArray(Convert.ToInt32(pictureBox6.Tag), Result))
+            if (IsNumberInArray(Convert.ToInt32(pb6.Tag), Result))
             {
-                pictureBox1.BackColor = Color.Lime;
+                pb6.BackColor = Color.Lime;
                 
             }
 
-            if (IsNumberInArray(Convert.ToInt32(pictureBox7.Tag), Result))
+            if (IsNumberInArray(Convert.ToInt32(pb7.Tag), Result))
             {
-                pictureBox1.BackColor = Color.Lime;
+                pb7.BackColor = Color.Lime;
                 
             }
 
-            if (IsNumberInArray(Convert.ToInt32(pictureBox8.Tag), Result))
+            if (IsNumberInArray(Convert.ToInt32(pb8.Tag), Result))
             {
-                pictureBox1.BackColor = Color.Lime;
+                pb8.BackColor = Color.Lime;
                 
             }
 
-            if (IsNumberInArray(Convert.ToInt32(pictureBox9.Tag), Result))
+            if (IsNumberInArray(Convert.ToInt32(pb9.Tag), Result))
             {
-                pictureBox1.BackColor = Color.Lime;
+                pb9.BackColor = Color.Lime;
                 
             }
         }
 
         void CheckWinner()
         {
-            if(Player2Plays+Player1Plays==9)
+
+
+            if (Player1Plays < 3 && Player2Plays < 3) return;
+
+            int[] Result = CheckWinStatus();
+
+            if (Result != default(int[]))
+            {
+                if (PlayerTurn == enPlayerTurn.Player1)
+                {
+                    GameWinner = enGameWinner.Player1;
+                    
+
+                }
+                else if (PlayerTurn == enPlayerTurn.Player2)
+                {
+                    GameWinner = enGameWinner.Player2;
+
+                }
+
+                lblWinner.Text=GameWinner.ToString();
+                PlayerTurn = enPlayerTurn.GameOver;
+                lblTurn.Text = "Game Over";
+                ChangeWInPictureBoxBackTGreen(Result);
+                return;
+            }
+
+
+            if (Player2Plays + Player1Plays == 9)
             {
                 GameWinner = enGameWinner.Draw;
                 lblWinner.Text = "Draw";
@@ -140,25 +241,12 @@ namespace Tic_Tac_Toe_Game
                 return;
             }
 
-            if(PlayerTurn==enPlayerTurn.Player1)
-            {
-                if (Player1Plays < 3) return;
-                else
-                {
-                    
-                }
-            }
-            else if(PlayerTurn==enPlayerTurn.Player2) { }
-            {
-                if(Player2Plays < 3) return;
-                else
-                {
-                    
-                }
-            }
 
+        }
 
-
+        int[] GetPlayerArray()
+        {
+            return (PlayerTurn==enPlayerTurn.Player1)? Player1Choices: Player2Choices;
         }
 
         void EnterPlayerChoices(int Number )
@@ -219,26 +307,26 @@ namespace Tic_Tac_Toe_Game
             Player2Choices = new int[9];
             lblTurn.Text=PlayerTurn.ToString();
             lblWinner.Text="In Progress";
-            pictureBox1.Image = Resources.question_mark_96;
-            pictureBox2.Image = Resources.question_mark_96;
-            pictureBox3.Image = Resources.question_mark_96;
-            pictureBox4.Image = Resources.question_mark_96;
-            pictureBox5.Image = Resources.question_mark_96;
-            pictureBox6.Image = Resources.question_mark_96;
-            pictureBox7.Image = Resources.question_mark_96;
-            pictureBox8.Image = Resources.question_mark_96;
-            pictureBox9.Image = Resources.question_mark_96;
+            pb1.Image = Resources.question_mark_96;
+            pb4.Image = Resources.question_mark_96;
+            pb7.Image = Resources.question_mark_96;
+            pb8.Image = Resources.question_mark_96;
+            pb5.Image = Resources.question_mark_96;
+            pb2.Image = Resources.question_mark_96;
+            pb9.Image = Resources.question_mark_96;
+            pb6.Image = Resources.question_mark_96;
+            pb3.Image = Resources.question_mark_96;
 
 
-            pictureBox1.BackColor = Color.Black;
-            pictureBox2.BackColor = Color.Black;
-            pictureBox3.BackColor = Color.Black;
-            pictureBox4.BackColor = Color.Black;
-            pictureBox5.BackColor = Color.Black;
-            pictureBox6.BackColor = Color.Black;
-            pictureBox7.BackColor = Color.Black;
-            pictureBox8.BackColor = Color.Black;
-            pictureBox9.BackColor = Color.Black;
+            pb1.BackColor = Color.Black;
+            pb4.BackColor = Color.Black;
+            pb7.BackColor = Color.Black;
+            pb8.BackColor = Color.Black;
+            pb5.BackColor = Color.Black;
+            pb2.BackColor = Color.Black;
+            pb9.BackColor = Color.Black;
+            pb6.BackColor = Color.Black;
+            pb3.BackColor = Color.Black;
         }
         void DrawVerticalLines(PaintEventArgs e , Pen pen)
         {

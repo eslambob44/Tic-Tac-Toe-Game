@@ -35,23 +35,25 @@
             this.lblWinner = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.pb9 = new System.Windows.Forms.PictureBox();
+            this.pb6 = new System.Windows.Forms.PictureBox();
+            this.pb3 = new System.Windows.Forms.PictureBox();
+            this.pb8 = new System.Windows.Forms.PictureBox();
+            this.pb5 = new System.Windows.Forms.PictureBox();
+            this.pb2 = new System.Windows.Forms.PictureBox();
+            this.pb7 = new System.Windows.Forms.PictureBox();
+            this.pb4 = new System.Windows.Forms.PictureBox();
+            this.pb1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblGameName
@@ -70,7 +72,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Monotype Corsiva", 36F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Yellow;
-            this.label1.Location = new System.Drawing.Point(70, 92);
+            this.label1.Location = new System.Drawing.Point(70, 137);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(107, 57);
             this.label1.TabIndex = 1;
@@ -81,7 +83,7 @@
             this.lblTurn.AutoSize = true;
             this.lblTurn.Font = new System.Drawing.Font("Monotype Corsiva", 36F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTurn.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblTurn.Location = new System.Drawing.Point(47, 157);
+            this.lblTurn.Location = new System.Drawing.Point(47, 213);
             this.lblTurn.Name = "lblTurn";
             this.lblTurn.Size = new System.Drawing.Size(153, 57);
             this.lblTurn.TabIndex = 2;
@@ -92,7 +94,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Monotype Corsiva", 36F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Yellow;
-            this.label2.Location = new System.Drawing.Point(47, 222);
+            this.label2.Location = new System.Drawing.Point(47, 289);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(153, 57);
             this.label2.TabIndex = 3;
@@ -103,7 +105,7 @@
             this.lblWinner.AutoSize = true;
             this.lblWinner.Font = new System.Drawing.Font("Monotype Corsiva", 36F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblWinner.ForeColor = System.Drawing.Color.Lime;
-            this.lblWinner.Location = new System.Drawing.Point(16, 287);
+            this.lblWinner.Location = new System.Drawing.Point(16, 365);
             this.lblWinner.Name = "lblWinner";
             this.lblWinner.Size = new System.Drawing.Size(214, 57);
             this.lblWinner.TabIndex = 4;
@@ -115,7 +117,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Monotype Corsiva", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(33, 366);
+            this.button1.Location = new System.Drawing.Point(33, 441);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(180, 48);
             this.button1.TabIndex = 5;
@@ -125,120 +127,130 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Image = global::Tic_Tac_Toe_Game.Properties.Resources.question_mark_96;
-            this.pictureBox1.Location = new System.Drawing.Point(333, 133);
+            this.pictureBox1.Image = global::Tic_Tac_Toe_Game.Properties.Resources.Tic_Tac_Toe_icon;
+            this.pictureBox1.Location = new System.Drawing.Point(67, 40);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(88, 96);
+            this.pictureBox1.Size = new System.Drawing.Size(113, 78);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabIndex = 15;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Tag = "1";
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // pictureBox2
+            // pb9
             // 
-            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox2.Image = global::Tic_Tac_Toe_Game.Properties.Resources.question_mark_96;
-            this.pictureBox2.Location = new System.Drawing.Point(333, 287);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(88, 96);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 7;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Tag = "4";
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            this.pb9.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pb9.Image = global::Tic_Tac_Toe_Game.Properties.Resources.question_mark_96;
+            this.pb9.Location = new System.Drawing.Point(639, 421);
+            this.pb9.Name = "pb9";
+            this.pb9.Size = new System.Drawing.Size(88, 96);
+            this.pb9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pb9.TabIndex = 14;
+            this.pb9.TabStop = false;
+            this.pb9.Tag = "9";
+            this.pb9.Click += new System.EventHandler(this.pictureBox7_Click);
             // 
-            // pictureBox3
+            // pb6
             // 
-            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox3.Image = global::Tic_Tac_Toe_Game.Properties.Resources.question_mark_96;
-            this.pictureBox3.Location = new System.Drawing.Point(333, 421);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(88, 96);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 8;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Tag = "7";
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pb6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pb6.Image = global::Tic_Tac_Toe_Game.Properties.Resources.question_mark_96;
+            this.pb6.Location = new System.Drawing.Point(639, 287);
+            this.pb6.Name = "pb6";
+            this.pb6.Size = new System.Drawing.Size(88, 96);
+            this.pb6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pb6.TabIndex = 13;
+            this.pb6.TabStop = false;
+            this.pb6.Tag = "6";
+            this.pb6.Click += new System.EventHandler(this.pictureBox8_Click);
             // 
-            // pictureBox4
+            // pb3
             // 
-            this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox4.Image = global::Tic_Tac_Toe_Game.Properties.Resources.question_mark_96;
-            this.pictureBox4.Location = new System.Drawing.Point(486, 421);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(88, 96);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 11;
-            this.pictureBox4.TabStop = false;
-            this.pictureBox4.Tag = "8";
-            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
+            this.pb3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pb3.Image = global::Tic_Tac_Toe_Game.Properties.Resources.question_mark_96;
+            this.pb3.Location = new System.Drawing.Point(639, 133);
+            this.pb3.Name = "pb3";
+            this.pb3.Size = new System.Drawing.Size(88, 96);
+            this.pb3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pb3.TabIndex = 12;
+            this.pb3.TabStop = false;
+            this.pb3.Tag = "3";
+            this.pb3.Click += new System.EventHandler(this.pictureBox9_Click);
             // 
-            // pictureBox5
+            // pb8
             // 
-            this.pictureBox5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox5.Image = global::Tic_Tac_Toe_Game.Properties.Resources.question_mark_96;
-            this.pictureBox5.Location = new System.Drawing.Point(486, 287);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(88, 96);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 10;
-            this.pictureBox5.TabStop = false;
-            this.pictureBox5.Tag = "5";
-            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
+            this.pb8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pb8.Image = global::Tic_Tac_Toe_Game.Properties.Resources.question_mark_96;
+            this.pb8.Location = new System.Drawing.Point(486, 421);
+            this.pb8.Name = "pb8";
+            this.pb8.Size = new System.Drawing.Size(88, 96);
+            this.pb8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pb8.TabIndex = 11;
+            this.pb8.TabStop = false;
+            this.pb8.Tag = "8";
+            this.pb8.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
-            // pictureBox6
+            // pb5
             // 
-            this.pictureBox6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox6.Image = global::Tic_Tac_Toe_Game.Properties.Resources.question_mark_96;
-            this.pictureBox6.Location = new System.Drawing.Point(486, 133);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(88, 96);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 9;
-            this.pictureBox6.TabStop = false;
-            this.pictureBox6.Tag = "2";
-            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
+            this.pb5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pb5.Image = global::Tic_Tac_Toe_Game.Properties.Resources.question_mark_96;
+            this.pb5.Location = new System.Drawing.Point(486, 287);
+            this.pb5.Name = "pb5";
+            this.pb5.Size = new System.Drawing.Size(88, 96);
+            this.pb5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pb5.TabIndex = 10;
+            this.pb5.TabStop = false;
+            this.pb5.Tag = "5";
+            this.pb5.Click += new System.EventHandler(this.pictureBox5_Click);
             // 
-            // pictureBox7
+            // pb2
             // 
-            this.pictureBox7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox7.Image = global::Tic_Tac_Toe_Game.Properties.Resources.question_mark_96;
-            this.pictureBox7.Location = new System.Drawing.Point(639, 421);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(88, 96);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox7.TabIndex = 14;
-            this.pictureBox7.TabStop = false;
-            this.pictureBox7.Tag = "9";
-            this.pictureBox7.Click += new System.EventHandler(this.pictureBox7_Click);
+            this.pb2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pb2.Image = global::Tic_Tac_Toe_Game.Properties.Resources.question_mark_96;
+            this.pb2.Location = new System.Drawing.Point(486, 133);
+            this.pb2.Name = "pb2";
+            this.pb2.Size = new System.Drawing.Size(88, 96);
+            this.pb2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pb2.TabIndex = 9;
+            this.pb2.TabStop = false;
+            this.pb2.Tag = "2";
+            this.pb2.Click += new System.EventHandler(this.pictureBox6_Click);
             // 
-            // pictureBox8
+            // pb7
             // 
-            this.pictureBox8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox8.Image = global::Tic_Tac_Toe_Game.Properties.Resources.question_mark_96;
-            this.pictureBox8.Location = new System.Drawing.Point(639, 287);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(88, 96);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox8.TabIndex = 13;
-            this.pictureBox8.TabStop = false;
-            this.pictureBox8.Tag = "6";
-            this.pictureBox8.Click += new System.EventHandler(this.pictureBox8_Click);
+            this.pb7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pb7.Image = global::Tic_Tac_Toe_Game.Properties.Resources.question_mark_96;
+            this.pb7.Location = new System.Drawing.Point(333, 421);
+            this.pb7.Name = "pb7";
+            this.pb7.Size = new System.Drawing.Size(88, 96);
+            this.pb7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pb7.TabIndex = 8;
+            this.pb7.TabStop = false;
+            this.pb7.Tag = "7";
+            this.pb7.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
-            // pictureBox9
+            // pb4
             // 
-            this.pictureBox9.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox9.Image = global::Tic_Tac_Toe_Game.Properties.Resources.question_mark_96;
-            this.pictureBox9.Location = new System.Drawing.Point(639, 133);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(88, 96);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox9.TabIndex = 12;
-            this.pictureBox9.TabStop = false;
-            this.pictureBox9.Tag = "3";
-            this.pictureBox9.Click += new System.EventHandler(this.pictureBox9_Click);
+            this.pb4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pb4.Image = global::Tic_Tac_Toe_Game.Properties.Resources.question_mark_96;
+            this.pb4.Location = new System.Drawing.Point(333, 287);
+            this.pb4.Name = "pb4";
+            this.pb4.Size = new System.Drawing.Size(88, 96);
+            this.pb4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pb4.TabIndex = 7;
+            this.pb4.TabStop = false;
+            this.pb4.Tag = "4";
+            this.pb4.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // pb1
+            // 
+            this.pb1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pb1.Image = global::Tic_Tac_Toe_Game.Properties.Resources.question_mark_96;
+            this.pb1.Location = new System.Drawing.Point(333, 133);
+            this.pb1.Name = "pb1";
+            this.pb1.Size = new System.Drawing.Size(88, 96);
+            this.pb1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pb1.TabIndex = 6;
+            this.pb1.TabStop = false;
+            this.pb1.Tag = "1";
+            this.pb1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // Form1
             // 
@@ -246,15 +258,16 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(800, 562);
-            this.Controls.Add(this.pictureBox7);
-            this.Controls.Add(this.pictureBox8);
-            this.Controls.Add(this.pictureBox9);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.pictureBox6);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pb9);
+            this.Controls.Add(this.pb6);
+            this.Controls.Add(this.pb3);
+            this.Controls.Add(this.pb8);
+            this.Controls.Add(this.pb5);
+            this.Controls.Add(this.pb2);
+            this.Controls.Add(this.pb7);
+            this.Controls.Add(this.pb4);
+            this.Controls.Add(this.pb1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.lblWinner);
             this.Controls.Add(this.label2);
@@ -262,17 +275,18 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblGameName);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Tic TacToe Game";
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form1_Paint);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -286,15 +300,16 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblWinner;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.PictureBox pb1;
+        private System.Windows.Forms.PictureBox pb4;
+        private System.Windows.Forms.PictureBox pb7;
+        private System.Windows.Forms.PictureBox pb8;
+        private System.Windows.Forms.PictureBox pb5;
+        private System.Windows.Forms.PictureBox pb2;
+        private System.Windows.Forms.PictureBox pb9;
+        private System.Windows.Forms.PictureBox pb6;
+        private System.Windows.Forms.PictureBox pb3;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.PictureBox pictureBox8;
-        private System.Windows.Forms.PictureBox pictureBox9;
     }
 }
 
